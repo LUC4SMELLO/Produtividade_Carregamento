@@ -21,7 +21,32 @@
 
     <main>
 
+        <label for="selecionar_caminhao">Selecionar Caminhão</label>
 
+        <select id="numero_caminhao" name="numero_caminhao">
+            {% for i in range(34, 16, -1) %}
+                <option value="{{i}}">{{i}}</option>
+            {% endfor %}
+        </select>
+
+        <br><br>
+
+        <div id="elementoParaMostrar" style="display: none;">
+            Este conteúdo será mostrado quando a Opção 2 for selecionada.
+        </div>
+
+        <script>
+        document.getElementById("numero_caminhao").onchange = function() {
+            var valorSelecionado = this.value;
+            var elementoParaMostrar = document.getElementById("elementoParaMostrar");
+
+            if (valorSelecionado === "17") {
+                elementoParaMostrar.style.display = "block"; // Mostra o elemento
+            } else {
+                elementoParaMostrar.style.display = "none"; // Esconde o elemento
+            }
+        };
+        </script>
 
     </main>
 
