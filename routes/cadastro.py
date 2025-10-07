@@ -28,7 +28,7 @@ def cadastro():
             novo_usuario.inserir_usuario()
 
             session["username"] = nome_completo
-            return redirect(url_for(""))
+            return redirect(url_for("carregamento.carregamento"))
 
 
 
