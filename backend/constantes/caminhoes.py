@@ -1,5 +1,15 @@
 caminhoes = [
     {
+        "caminhao": 2,
+        "baias_a": ["A1", "A2", "A3", "A4", "A5"],
+        "baias_m": ["M1", "M2", "M3", "M4", "M5"]
+    },
+    {
+        "caminhao": 3,
+        "baias_a": ["A1", "A2", "A3", "A4", "A5", "A6"],
+        "baias_m": ["M1", "M2", "M3", "M4", "M5", "M6"]
+    },
+    {
         "caminhao": 17,
         "baias_a": ["A1", "A2", "A3", "A4", "A5", "A6"],
         "baias_m": ["M1", "M2", "M3", "M4", "M5", "M6"],
