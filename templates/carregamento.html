@@ -26,6 +26,9 @@
         <label for="selecionar_caminhao" style="font-size:larger">Selecione o Caminhão: </label>
 
         <select style="font-size: large;" id="numero_caminhao" name="numero_caminhao">
+                <option value="none" selected></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             {% for i in range(34, 16, -1) %}
                 <option value="{{i}}">{{i}}</option>
             {% endfor %}
@@ -33,8 +36,103 @@
 
         <br><br><br>
 
-        <div>
+        <div id="caminhao_6_portas" style=display:none>
 
+            <!-- CAMINHÃO DE 6 PORTAS -->
+            <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
+               <input class="sem-setas" type="number" id="m1_2" name="m1_2">
+               <input class="sem-setas" type="number" id="m1_3" name="m1_3">
+               <input class="sem-setas" type="number" id="m1_4" name="m1_4">
+
+            <b>A1</b> <input class="sem-setas" type="number" id="a1_1" name="a1_1"> 
+               <input class="sem-setas" type="number" id="a1_2" name="a1_2">
+               <input class="sem-setas" type="number" id="a1_3" name="a1_3">
+               <input class="sem-setas" type="number" id="a1_4" name="a1_4">
+
+            <br><br>
+            
+            <b>M2</b> <input class="sem-setas" type="number" id="m2_1" name="m2_1"> 
+               <input class="sem-setas" type="number" id="m2_2" name="m2_2">
+               <input class="sem-setas" type="number" id="m2_3" name="m2_3">
+               <input class="sem-setas" type="number" id="m2_4" name="m2_4">
+
+            <b>A2</b> <input class="sem-setas" type="number" id="a2_1" name="a2_1"> 
+               <input class="sem-setas" type="number" id="a2_2" name="a2_2">
+               <input class="sem-setas" type="number" id="a2_3" name="a2_3">
+               <input class="sem-setas" type="number" id="a2_4" name="a2_4">
+
+            <br><br>
+
+            <b>M3</b> <input class="sem-setas" type="number" id="m3_1" name="m3_1"> 
+               <input class="sem-setas" type="number" id="m3_2" name="m3_2">
+               <input class="sem-setas" type="number" id="m3_3" name="m3_3">
+               <input class="sem-setas" type="number" id="m3_4" name="m3_4">
+
+            <b>A3</b> <input class="sem-setas" type="number" id="a3_1" name="a3_1"> 
+               <input class="sem-setas" type="number" id="a3_2" name="a3_2">
+               <input class="sem-setas" type="number" id="a3_3" name="a3_3">
+               <input class="sem-setas" type="number" id="a3_4" name="a3_4">
+
+            <br><br>
+
+        </div>
+
+        <div id="caminhao_8_portas" style=display:none>
+
+            <!-- CAMINHÃO DE 8 PORTAS -->
+            <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
+               <input class="sem-setas" type="number" id="m1_2" name="m1_2">
+               <input class="sem-setas" type="number" id="m1_3" name="m1_3">
+               <input class="sem-setas" type="number" id="m1_4" name="m1_4">
+
+            <b>A1</b> <input class="sem-setas" type="number" id="a1_1" name="a1_1"> 
+               <input class="sem-setas" type="number" id="a1_2" name="a1_2">
+               <input class="sem-setas" type="number" id="a1_3" name="a1_3">
+               <input class="sem-setas" type="number" id="a1_4" name="a1_4">
+
+            <br><br>
+            
+            <b>M2</b> <input class="sem-setas" type="number" id="m2_1" name="m2_1"> 
+               <input class="sem-setas" type="number" id="m2_2" name="m2_2">
+               <input class="sem-setas" type="number" id="m2_3" name="m2_3">
+               <input class="sem-setas" type="number" id="m2_4" name="m2_4">
+
+            <b>A2</b> <input class="sem-setas" type="number" id="a2_1" name="a2_1"> 
+               <input class="sem-setas" type="number" id="a2_2" name="a2_2">
+               <input class="sem-setas" type="number" id="a2_3" name="a2_3">
+               <input class="sem-setas" type="number" id="a2_4" name="a2_4">
+
+            <br><br>
+
+            <b>M3</b> <input class="sem-setas" type="number" id="m3_1" name="m3_1"> 
+               <input class="sem-setas" type="number" id="m3_2" name="m3_2">
+               <input class="sem-setas" type="number" id="m3_3" name="m3_3">
+               <input class="sem-setas" type="number" id="m3_4" name="m3_4">
+
+            <b>A3</b> <input class="sem-setas" type="number" id="a3_1" name="a3_1"> 
+               <input class="sem-setas" type="number" id="a3_2" name="a3_2">
+               <input class="sem-setas" type="number" id="a3_3" name="a3_3">
+               <input class="sem-setas" type="number" id="a3_4" name="a3_4">
+
+            <br><br>
+
+            <b>M4</b> <input class="sem-setas" type="number" id="m4_1" name="m4_1"> 
+               <input class="sem-setas" type="number" id="m4_2" name="m4_2">
+               <input class="sem-setas" type="number" id="m4_3" name="m4_3">
+               <input class="sem-setas" type="number" id="m4_4" name="m4_4">
+
+            <b>A4</b> <input class="sem-setas" type="number" id="a4_1" name="a4_1"> 
+               <input class="sem-setas" type="number" id="a4_2" name="a4_2">
+               <input class="sem-setas" type="number" id="a4_3" name="a4_3">
+               <input class="sem-setas" type="number" id="a4_4" name="a4_4">
+
+        </div>
+
+        
+
+        <div id="caminhao_10_portas" style=display:none>
+
+            <!-- CAMINHÃO DE 10 PORTAS -->
             <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
                <input class="sem-setas" type="number" id="m1_2" name="m1_2">
                <input class="sem-setas" type="number" id="m1_3" name="m1_3">
@@ -95,28 +193,236 @@
 
         </div>
 
+        <div id="caminhao_12_portas" style=display:none>
+
+            <!-- CAMINHÃO DE 12 PORTAS -->
+            <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
+               <input class="sem-setas" type="number" id="m1_2" name="m1_2">
+               <input class="sem-setas" type="number" id="m1_3" name="m1_3">
+               <input class="sem-setas" type="number" id="m1_4" name="m1_4">
+
+            <b>A1</b> <input class="sem-setas" type="number" id="a1_1" name="a1_1"> 
+               <input class="sem-setas" type="number" id="a1_2" name="a1_2">
+               <input class="sem-setas" type="number" id="a1_3" name="a1_3">
+               <input class="sem-setas" type="number" id="a1_4" name="a1_4">
+
+            <br><br>
+            
+            <b>M2</b> <input class="sem-setas" type="number" id="m2_1" name="m2_1"> 
+               <input class="sem-setas" type="number" id="m2_2" name="m2_2">
+               <input class="sem-setas" type="number" id="m2_3" name="m2_3">
+               <input class="sem-setas" type="number" id="m2_4" name="m2_4">
+
+            <b>A2</b> <input class="sem-setas" type="number" id="a2_1" name="a2_1"> 
+               <input class="sem-setas" type="number" id="a2_2" name="a2_2">
+               <input class="sem-setas" type="number" id="a2_3" name="a2_3">
+               <input class="sem-setas" type="number" id="a2_4" name="a2_4">
+
+            <br><br>
+
+            <b>M3</b> <input class="sem-setas" type="number" id="m3_1" name="m3_1"> 
+               <input class="sem-setas" type="number" id="m3_2" name="m3_2">
+               <input class="sem-setas" type="number" id="m3_3" name="m3_3">
+               <input class="sem-setas" type="number" id="m3_4" name="m3_4">
+
+            <b>A3</b> <input class="sem-setas" type="number" id="a3_1" name="a3_1"> 
+               <input class="sem-setas" type="number" id="a3_2" name="a3_2">
+               <input class="sem-setas" type="number" id="a3_3" name="a3_3">
+               <input class="sem-setas" type="number" id="a3_4" name="a3_4">
+
+            <br><br>
+
+            <b>M4</b> <input class="sem-setas" type="number" id="m4_1" name="m4_1"> 
+               <input class="sem-setas" type="number" id="m4_2" name="m4_2">
+               <input class="sem-setas" type="number" id="m4_3" name="m4_3">
+               <input class="sem-setas" type="number" id="m4_4" name="m4_4">
+
+            <b>A4</b> <input class="sem-setas" type="number" id="a4_1" name="a4_1"> 
+               <input class="sem-setas" type="number" id="a4_2" name="a4_2">
+               <input class="sem-setas" type="number" id="a4_3" name="a4_3">
+               <input class="sem-setas" type="number" id="a4_4" name="a4_4">
+
+            <br><br>
+
+            <b>M5</b> <input class="sem-setas" type="number" id="m5_1" name="m5_1"> 
+               <input class="sem-setas" type="number" id="m5_2" name="m5_2">
+               <input class="sem-setas" type="number" id="m5_3" name="m5_3">
+               <input class="sem-setas" type="number" id="m5_4" name="m5_4">
+
+            <b>A5</b> <input class="sem-setas" type="number" id="a5_1" name="a5_1"> 
+               <input class="sem-setas" type="number" id="a5_2" name="a5_2">
+               <input class="sem-setas" type="number" id="a5_3" name="a5_3">
+               <input class="sem-setas" type="number" id="a5_4" name="a5_4">
+
+            <br><br>
+
+            <b>M6</b> <input class="sem-setas" type="number" id="m6_1" name="m6_1"> 
+               <input class="sem-setas" type="number" id="m6_2" name="m6_2">
+               <input class="sem-setas" type="number" id="m6_3" name="m6_3">
+               <input class="sem-setas" type="number" id="m6_4" name="m6_4">
+
+            <b>A6</b> <input class="sem-setas" type="number" id="a6_1" name="a6_1"> 
+               <input class="sem-setas" type="number" id="a6_2" name="a6_2">
+               <input class="sem-setas" type="number" id="a6_3" name="a6_3">
+               <input class="sem-setas" type="number" id="a6_4" name="a6_4">
+
+        </div>
+
+        
+        <div id="caminhao_14_portas" style=display:none>>
+
+            <!-- CAMINHÃO DE 14 PORTAS -->
+            <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
+               <input class="sem-setas" type="number" id="m1_2" name="m1_2">
+               <input class="sem-setas" type="number" id="m1_3" name="m1_3">
+               <input class="sem-setas" type="number" id="m1_4" name="m1_4">
+
+            <b>A1</b> <input class="sem-setas" type="number" id="a1_1" name="a1_1"> 
+               <input class="sem-setas" type="number" id="a1_2" name="a1_2">
+               <input class="sem-setas" type="number" id="a1_3" name="a1_3">
+               <input class="sem-setas" type="number" id="a1_4" name="a1_4">
+
+            <br><br>
+            
+            <b>M2</b> <input class="sem-setas" type="number" id="m2_1" name="m2_1"> 
+               <input class="sem-setas" type="number" id="m2_2" name="m2_2">
+               <input class="sem-setas" type="number" id="m2_3" name="m2_3">
+               <input class="sem-setas" type="number" id="m2_4" name="m2_4">
+
+            <b>A2</b> <input class="sem-setas" type="number" id="a2_1" name="a2_1"> 
+               <input class="sem-setas" type="number" id="a2_2" name="a2_2">
+               <input class="sem-setas" type="number" id="a2_3" name="a2_3">
+               <input class="sem-setas" type="number" id="a2_4" name="a2_4">
+
+            <br><br>
+
+            <b>M3</b> <input class="sem-setas" type="number" id="m3_1" name="m3_1"> 
+               <input class="sem-setas" type="number" id="m3_2" name="m3_2">
+               <input class="sem-setas" type="number" id="m3_3" name="m3_3">
+               <input class="sem-setas" type="number" id="m3_4" name="m3_4">
+
+            <b>A3</b> <input class="sem-setas" type="number" id="a3_1" name="a3_1"> 
+               <input class="sem-setas" type="number" id="a3_2" name="a3_2">
+               <input class="sem-setas" type="number" id="a3_3" name="a3_3">
+               <input class="sem-setas" type="number" id="a3_4" name="a3_4">
+
+            <br><br>
+
+            <b>M4</b> <input class="sem-setas" type="number" id="m4_1" name="m4_1"> 
+               <input class="sem-setas" type="number" id="m4_2" name="m4_2">
+               <input class="sem-setas" type="number" id="m4_3" name="m4_3">
+               <input class="sem-setas" type="number" id="m4_4" name="m4_4">
+
+            <b>A4</b> <input class="sem-setas" type="number" id="a4_1" name="a4_1"> 
+               <input class="sem-setas" type="number" id="a4_2" name="a4_2">
+               <input class="sem-setas" type="number" id="a4_3" name="a4_3">
+               <input class="sem-setas" type="number" id="a4_4" name="a4_4">
+
+            <br><br>
+
+            <b>M5</b> <input class="sem-setas" type="number" id="m5_1" name="m5_1"> 
+               <input class="sem-setas" type="number" id="m5_2" name="m5_2">
+               <input class="sem-setas" type="number" id="m5_3" name="m5_3">
+               <input class="sem-setas" type="number" id="m5_4" name="m5_4">
+
+            <b>A5</b> <input class="sem-setas" type="number" id="a5_1" name="a5_1"> 
+               <input class="sem-setas" type="number" id="a5_2" name="a5_2">
+               <input class="sem-setas" type="number" id="a5_3" name="a5_3">
+               <input class="sem-setas" type="number" id="a5_4" name="a5_4">
+
+            <br><br>
+
+            <b>M6</b> <input class="sem-setas" type="number" id="m6_1" name="m6_1"> 
+               <input class="sem-setas" type="number" id="m6_2" name="m6_2">
+               <input class="sem-setas" type="number" id="m6_3" name="m6_3">
+               <input class="sem-setas" type="number" id="m6_4" name="m6_4">
+
+            <b>A6</b> <input class="sem-setas" type="number" id="a6_1" name="a6_1"> 
+               <input class="sem-setas" type="number" id="a6_2" name="a6_2">
+               <input class="sem-setas" type="number" id="a6_3" name="a6_3">
+               <input class="sem-setas" type="number" id="a6_4" name="a6_4">
+
+            <br><br>
+
+            <b>M7</b> <input class="sem-setas" type="number" id="m7_1" name="m7_1"> 
+               <input class="sem-setas" type="number" id="m7_2" name="m7_2">
+               <input class="sem-setas" type="number" id="m7_3" name="m7_3">
+               <input class="sem-setas" type="number" id="m7_4" name="m7_4">
+
+            <b>A7</b> <input class="sem-setas" type="number" id="a7_1" name="a7_1"> 
+               <input class="sem-setas" type="number" id="a7_2" name="a7_2">
+               <input class="sem-setas" type="number" id="a7_3" name="a7_3">
+               <input class="sem-setas" type="number" id="a7_4" name="a7_4">
+
+        </div>
+
         <br>
 
         <button type="submit" class="btn btn-primary">Salvar</button>
 
-        <div id="elementoParaMostrar" style="display: none;">
-            Este conteúdo será mostrado quando a Opção 2 for selecionada.
-        </div>
-
         <script>
         document.getElementById("numero_caminhao").onchange = function() {
             var valorSelecionado = this.value;
-            var elementoParaMostrar = document.getElementById("elementoParaMostrar");
+            var caminhao_6_portas = document.getElementById("caminhao_6_portas");
+            var caminhao_8_portas = document.getElementById("caminhao_8_portas");
+            var caminhao_10_portas = document.getElementById("caminhao_10_portas");
+            var caminhao_12_portas = document.getElementById("caminhao_12_portas");
+            var caminhao_14_portas = document.getElementById("caminhao_14_portas");
 
-            if (valorSelecionado === "17") {
-                elementoParaMostrar.style.display = "block"; // Mostra o elemento
-            } else {
-                elementoParaMostrar.style.display = "none"; // Esconde o elemento
+            if (valorSelecionado > "19"  && (valorSelecionado) <= "30" | (valorSelecionado) > "33") {
+                caminhao_6_portas.style.display = "none";
+                caminhao_8_portas.style.display = "none";
+                caminhao_10_portas.style.display = "block"; // Mostra o elemento
+                caminhao_12_portas.style.display = "none";
+                caminhao_14_portas.style.display = "none";
+            }
+            else if (valorSelecionado > "2" && (valorSelecionado) < "3") {
+                caminhao_6_portas.style.display = "none";
+                caminhao_8_portas.style.display = "none";                
+                caminhao_10_portas.style.display = "block";
+                caminhao_12_portas.style.display = "none";
+                caminhao_14_portas.style.display = "none";
+            }
+            else if (valorSelecionado === "17") {
+                caminhao_6_portas.style.display = "none";
+                caminhao_8_portas.style.display = "none";                
+                caminhao_10_portas.style.display = "none";
+                caminhao_12_portas.style.display = "block";
+                caminhao_14_portas.style.display = "none";
+            }
+            else if (valorSelecionado === "18" | valorSelecionado === "19") {
+                caminhao_6_portas.style.display = "none";
+                caminhao_8_portas.style.display = "none";                
+                caminhao_10_portas.style.display = "none";
+                caminhao_12_portas.style.display = "none";
+                caminhao_14_portas.style.display = "block";
+            }
+            else if (valorSelecionado > "30" & valorSelecionado < 33) {
+                
+                caminhao_6_portas.style.display = "none";
+                caminhao_8_portas.style.display = "block";
+                caminhao_10_portas.style.display = "none";
+                caminhao_12_portas.style.display = "none";
+                caminhao_14_portas.style.display = "none";
+            }
+            else if (valorSelecionado === "33") {
+                caminhao_6_portas.style.display = "block";
+                caminhao_8_portas.style.display = "none";
+                caminhao_10_portas.style.display = "none";
+                caminhao_12_portas.style.display = "none";
+                caminhao_14_portas.style.display = "none";
+            }
+            else {
+                caminhao_6_portas.style.display = "none";
+                caminhao_8_portas.style.display = "none";
+                caminhao_10_portas.style.display = "none"; // Esconde o elemento
+                caminhao_12_portas.style.display = "none"; // Esconde o elemento
+                caminhao_14_portas.style.display = "none"; // Esconde o elemento
             }
         };
         </script>
 
-          <!-- TRECHO PARA NÃO ENVIAR FORMUÇÁRIO NO ENTER -->
+        <!-- TRECHO PARA NÃO ENVIAR FORMUÇÁRIO NO ENTER -->
         <script>
             document.getElementById('formulario-contagem').addEventListener('keydown', function(event) {
                 if (event.key === 'Enter') {
