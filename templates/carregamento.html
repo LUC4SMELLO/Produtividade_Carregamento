@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <h1>Carregamento Caminhão</h1>
+        <b style="font-size: xx-large;">Carregamento Caminhão</b>
         <img src="{{ url_for('static', filename='images/logo_dbcambui_2.png') }}" alt="Logo da Empresa">
     </header>
 
@@ -21,15 +21,83 @@
 
     <main>
 
-        <label for="selecionar_caminhao">Selecionar Caminhão</label>
+        <br>
 
-        <select id="numero_caminhao" name="numero_caminhao">
+        <label for="selecionar_caminhao" style="font-size:larger">Selecione o Caminhão: </label>
+
+        <select style="font-size: large;" id="numero_caminhao" name="numero_caminhao">
             {% for i in range(34, 16, -1) %}
                 <option value="{{i}}">{{i}}</option>
             {% endfor %}
         </select>
 
-        <br><br>
+        <br><br><br>
+
+        <div>
+
+            <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
+               <input class="sem-setas" type="number" id="m1_2" name="m1_2">
+               <input class="sem-setas" type="number" id="m1_3" name="m1_3">
+               <input class="sem-setas" type="number" id="m1_4" name="m1_4">
+
+            <b>A1</b> <input class="sem-setas" type="number" id="a1_1" name="a1_1"> 
+               <input class="sem-setas" type="number" id="a1_2" name="a1_2">
+               <input class="sem-setas" type="number" id="a1_3" name="a1_3">
+               <input class="sem-setas" type="number" id="a1_4" name="a1_4">
+
+            <br><br>
+            
+            <b>M2</b> <input class="sem-setas" type="number" id="m2_1" name="m2_1"> 
+               <input class="sem-setas" type="number" id="m2_2" name="m2_2">
+               <input class="sem-setas" type="number" id="m2_3" name="m2_3">
+               <input class="sem-setas" type="number" id="m2_4" name="m2_4">
+
+            <b>A2</b> <input class="sem-setas" type="number" id="a2_1" name="a2_1"> 
+               <input class="sem-setas" type="number" id="a2_2" name="a2_2">
+               <input class="sem-setas" type="number" id="a2_3" name="a2_3">
+               <input class="sem-setas" type="number" id="a2_4" name="a2_4">
+
+            <br><br>
+
+            <b>M3</b> <input class="sem-setas" type="number" id="m3_1" name="m3_1"> 
+               <input class="sem-setas" type="number" id="m3_2" name="m3_2">
+               <input class="sem-setas" type="number" id="m3_3" name="m3_3">
+               <input class="sem-setas" type="number" id="m3_4" name="m3_4">
+
+            <b>A3</b> <input class="sem-setas" type="number" id="a3_1" name="a3_1"> 
+               <input class="sem-setas" type="number" id="a3_2" name="a3_2">
+               <input class="sem-setas" type="number" id="a3_3" name="a3_3">
+               <input class="sem-setas" type="number" id="a3_4" name="a3_4">
+
+            <br><br>
+
+            <b>M4</b> <input class="sem-setas" type="number" id="m4_1" name="m4_1"> 
+               <input class="sem-setas" type="number" id="m4_2" name="m4_2">
+               <input class="sem-setas" type="number" id="m4_3" name="m4_3">
+               <input class="sem-setas" type="number" id="m4_4" name="m4_4">
+
+            <b>A4</b> <input class="sem-setas" type="number" id="a4_1" name="a4_1"> 
+               <input class="sem-setas" type="number" id="a4_2" name="a4_2">
+               <input class="sem-setas" type="number" id="a4_3" name="a4_3">
+               <input class="sem-setas" type="number" id="a4_4" name="a4_4">
+
+            <br><br>
+
+            <b>M5</b> <input class="sem-setas" type="number" id="m5_1" name="m5_1"> 
+               <input class="sem-setas" type="number" id="m5_2" name="m5_2">
+               <input class="sem-setas" type="number" id="m5_3" name="m5_3">
+               <input class="sem-setas" type="number" id="m5_4" name="m5_4">
+
+            <b>A5</b> <input class="sem-setas" type="number" id="a5_1" name="a5_1"> 
+               <input class="sem-setas" type="number" id="a5_2" name="a5_2">
+               <input class="sem-setas" type="number" id="a5_3" name="a5_3">
+               <input class="sem-setas" type="number" id="a5_4" name="a5_4">
+
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Salvar</button>
 
         <div id="elementoParaMostrar" style="display: none;">
             Este conteúdo será mostrado quando a Opção 2 for selecionada.
@@ -46,6 +114,15 @@
                 elementoParaMostrar.style.display = "none"; // Esconde o elemento
             }
         };
+        </script>
+
+          <!-- TRECHO PARA NÃO ENVIAR FORMUÇÁRIO NO ENTER -->
+        <script>
+            document.getElementById('formulario-contagem').addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                }
+            });
         </script>
 
     </main>
