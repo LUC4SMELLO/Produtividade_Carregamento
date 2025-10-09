@@ -27,11 +27,11 @@
 
         <select style="font-size: large;" id="numero_caminhao" name="numero_caminhao">
                 <option value="none" selected></option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            {% for i in range(34, 16, -1) %}
+                {% for i in range(34, 16, -1) %}
                 <option value="{{i}}">{{i}}</option>
-            {% endfor %}
+                {% endfor %}
+                <option value="3">3</option>
+                <option value="2">2</option>
         </select>
 
         <br><br><br>
@@ -269,7 +269,7 @@
         </div>
 
         
-        <div id="caminhao_14_portas" style=display:none>>
+        <div id="caminhao_14_portas" style=display:none>
 
             <!-- CAMINHÃO DE 14 PORTAS -->
             <b>M1</b> <input class="sem-setas" type="number" id="m1_1" name="m1_1">
